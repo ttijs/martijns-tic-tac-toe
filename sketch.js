@@ -157,78 +157,138 @@ function draw() {
 
 function mousePressed() {
     
-    if (mouseX > 100 && mouseX < 200 && mouseY > 100 && mouseY < 200 && vakje1 == 0) {
-        vakje1 = speler;
-        if (speler == 1) {
-            speler = 2;
-        } else {
-            speler = 1;
+    if (winnaar == 0) {
+        if (
+            mouseX > 100 &&
+            mouseX < 200 &&
+            mouseY > 100 &&
+            mouseY < 200 &&
+            vakje1 == 0
+        ) {
+            vakje1 = speler;
+            if (speler == 1) {
+                speler = 2;
+            } else {
+                speler = 1;
+            }
+        }
+        if (
+            mouseX > 100 &&
+            mouseX < 200 &&
+            mouseY > 200 &&
+            mouseY < 300 &&
+            vakje2 == 0
+        ) {
+            vakje2 = speler;
+            if (speler == 1) {
+                speler = 2;
+            } else {
+                speler = 1;
+            }
+        }
+        if (
+            mouseX > 100 &&
+            mouseX < 200 &&
+            mouseY > 300 &&
+            mouseY < 400 &&
+            vakje3 == 0
+        ) {
+            vakje3 = speler;
+            if (speler == 1) {
+                speler = 2;
+            } else {
+                speler = 1;
+            }
+        }
+        if (
+            mouseX > 200 &&
+            mouseX < 300 &&
+            mouseY > 100 &&
+            mouseY < 200 &&
+            vakje4 == 0
+        ) {
+            vakje4 = speler;
+            if (speler == 1) {
+                speler = 2;
+            } else {
+                speler = 1;
+            }
+        }
+        if (
+            mouseX > 200 &&
+            mouseX < 300 &&
+            mouseY > 200 &&
+            mouseY < 300 &&
+            vakje5 == 0
+        ) {
+            vakje5 = speler;
+            if (speler == 1) {
+                speler = 2;
+            } else {
+                speler = 1;
+            }
+        }
+        if (
+            mouseX > 200 &&
+            mouseX < 300 &&
+            mouseY > 300 &&
+            mouseY < 400 &&
+            vakje6 == 0
+        ) {
+            vakje6 = speler;
+            if (speler == 1) {
+                speler = 2;
+            } else {
+                speler = 1;
+            }
+        }
+        if (
+            mouseX > 300 &&
+            mouseX < 400 &&
+            mouseY > 100 &&
+            mouseY < 200 &&
+            vakje7 == 0
+        ) {
+            vakje7 = speler;
+            if (speler == 1) {
+                speler = 2;
+            } else {
+                speler = 1;
+            }
+        }
+        if (
+            mouseX > 300 &&
+            mouseX < 400 &&
+            mouseY > 200 &&
+            mouseY < 300 &&
+            vakje8 == 0
+        ) {
+            vakje8 = speler;
+            if (speler == 1) {
+                speler = 2;
+            } else {
+                speler = 1;
+            }
+        }
+        if (
+            mouseX > 300 &&
+            mouseX < 400 &&
+            mouseY > 300 &&
+            mouseY < 400 &&
+            vakje9 == 0
+        ) {
+            vakje9 = speler;
+            if (speler == 1) {
+                speler = 2;
+            } else {
+                speler = 1;
+            }
         }
     }
-    if (mouseX > 100 && mouseX < 200 && mouseY > 200 && mouseY < 300 && vakje2 == 0) {
-        vakje2 = speler;
-        if (speler == 1) {
-            speler = 2;
-        } else {
-            speler = 1;
-        }
+    else {
+        console.log("spel is al afgelopen");
     }
-    if (mouseX > 100 && mouseX < 200 && mouseY > 300 && mouseY < 400 && vakje3 == 0) {
-        vakje3 = speler;
-        if (speler == 1) {
-            speler = 2;
-        } else {
-            speler = 1;
-        }
-    }
-    if (mouseX > 200 && mouseX < 300 && mouseY > 100 && mouseY < 200 && vakje4 == 0) {
-        vakje4 = speler;
-        if (speler == 1) {
-            speler = 2;
-        } else {
-            speler = 1;
-        }
-    }
-    if (mouseX > 200 && mouseX < 300 && mouseY > 200 && mouseY < 300 && vakje5 == 0) {
-        vakje5 = speler;
-        if (speler == 1) {
-            speler = 2;
-        } else {
-            speler = 1;
-        }
-    }
-    if (mouseX > 200 && mouseX < 300 && mouseY > 300 && mouseY < 400 && vakje6 == 0) {
-        vakje6 = speler;
-        if (speler == 1) {
-            speler = 2;
-        } else {
-            speler = 1;
-        }
-    }
-    if (mouseX > 300 && mouseX < 400 && mouseY > 100 && mouseY < 200 && vakje7 == 0) {
-        vakje7 = speler;
-        if (speler == 1) {
-            speler = 2;
-        } else {
-            speler = 1;
-        }
-    }
-    if (mouseX > 300 && mouseX < 400 && mouseY > 200 && mouseY < 300 && vakje8 == 0) {
-        vakje8 = speler;
-        if (speler == 1) {
-            speler = 2;
-        } else {
-            speler = 1;
-        }
-    }
-    if (mouseX > 300 && mouseX < 400 && mouseY > 300 && mouseY < 400 && vakje9 == 0) {
-        vakje9 = speler;
-        if (speler == 1) {
-            speler = 2;
-        } else {
-            speler = 1;
-        }
-    }
+
     checkWin();
 }
 
