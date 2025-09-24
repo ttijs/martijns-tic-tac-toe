@@ -263,5 +263,19 @@ function checkWin() {
         console.log("speler 2 heeft gewonnen");
     }
 
+    // diagonaal
+    if (vakje1 == 1 && vakje5 == 1 && vakje9 == 1) {
+        console.log("speler 1 heeft gewonnen");
+    }
+    if (vakje3 == 1 && vakje5 == 1 && vakje7 == 1) {
+        console.log("speler 1 heeft gewonnen");
+    }
+    if (vakje1 == 2 && vakje5 == 2 && vakje9 == 2) {
+        console.log("speler 2 heeft gewonnen");
+    }
+    if (vakje3 == 2 && vakje5 == 2 && vakje7 == 2) {
+        console.log("speler 2 heeft gewonnen");
+    }
+
 
 }
