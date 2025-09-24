@@ -222,6 +222,8 @@ function mousePressed() {
 }
 
 function checkWin() {
+    
+    // verticaal
     if (vakje1 == 1 && vakje2 == 1 && vakje3 == 1) {
         console.log("speler 1 heeft gewonnen");
     }
@@ -240,5 +242,26 @@ function checkWin() {
     if (vakje7 == 2 && vakje8 == 2 && vakje9 == 2) {
         console.log("speler 2 heeft gewonnen");
     }
+
+    // horizontaal
+    if (vakje1 == 1 && vakje4 == 1 && vakje7 == 1) {
+        console.log("speler 1 heeft gewonnen");
+    }
+    if (vakje2 == 1 && vakje5 == 1 && vakje8 == 1) {
+        console.log("speler 1 heeft gewonnen");
+    }
+    if (vakje3 == 1 && vakje6 == 1 && vakje9 == 1) {
+        console.log("speler 1 heeft gewonnen");
+    }
+    if (vakje1 == 2 && vakje4 == 2 && vakje7 == 2) {
+        console.log("speler 2 heeft gewonnen");
+    }
+    if (vakje2 == 2 && vakje5 == 2 && vakje8 == 2) {
+        console.log("speler 2 heeft gewonnen");
+    }
+    if (vakje3 == 2 && vakje6 == 2 && vakje9 == 2) {
+        console.log("speler 2 heeft gewonnen");
+    }
+
 
 }
