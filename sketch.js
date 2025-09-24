@@ -63,7 +63,8 @@ function draw() {
 }
 
 function mousePressed() {
-    if (mouseX > 100 && mouseX < 200 && mouseY > 100 && mouseY < 200) {
+
+    if (mouseX > 100 && mouseX < 200 && mouseY > 100 && mouseY < 200 && vakje1 == 0) {
         vakje1 = speler;
         if (speler == 1) {
             speler = 2;
@@ -71,7 +72,7 @@ function mousePressed() {
             speler = 1;
         }
     }
-    if (mouseX > 100 && mouseX < 200 && mouseY > 200 && mouseY < 300) {
+    if (mouseX > 100 && mouseX < 200 && mouseY > 200 && mouseY < 300 && vakje2 == 0) {
         vakje2 = speler;
         if (speler == 1) {
             speler = 2;
@@ -79,7 +80,7 @@ function mousePressed() {
             speler = 1;
         }
     }
-    if (mouseX > 100 && mouseX < 200 && mouseY > 300 && mouseY < 400) {
+    if (mouseX > 100 && mouseX < 200 && mouseY > 300 && mouseY < 400 && vakje3 == 0) {
         vakje3 = speler;
         if (speler == 1) {
             speler = 2;
