@@ -16,8 +16,7 @@ let vakje9 = 0;
 let speler = 1; //dit is de speler die op dit moment aan de beurt is,
 // die moet je dus iedere keer dat er op een leeg vakje wordt geklikt aanpassen
 
-//in dit voorbeeld wordt nog NIET voorkomen dat je dubbel kunt klikken op een vakje,
-// dat wordt straks uitgelegd
+let winnaar = 0;
 
 function setup() {
     createCanvas(500, 500);
@@ -126,9 +125,9 @@ function draw() {
         fill("blue");
     }
     rect(300, 300, 100, 100);
-
-
-
+    
+    
+    
     //----------------------------------
     fill("black");
     text("vakje1 = " + vakje1, 10, 10);
@@ -140,12 +139,24 @@ function draw() {
     text("vakje7 = " + vakje7, 10, 310);
     text("vakje8 = " + vakje8, 10, 360);
     text("vakje9 = " + vakje9, 10, 410);
-
+    
     text("speler = " + speler, 10, 460);
+
+    if (winnaar == 1) {
+        console.log("speler 1 heeft gewonnen!");
+        text("speler 1 heeft gewonnen!!!!!!", 10, 480);
+    }
+    if (winnaar == 2) {
+        console.log("speler 2 heeft gewonnen!");
+        text("speler 2 heeft gewonnen!!!!!!!", 10, 480);
+    }
+   
+
+
 }
 
 function mousePressed() {
-
+    
     if (mouseX > 100 && mouseX < 200 && mouseY > 100 && mouseY < 200 && vakje1 == 0) {
         vakje1 = speler;
         if (speler == 1) {
@@ -226,56 +237,72 @@ function checkWin() {
     // verticaal
     if (vakje1 == 1 && vakje2 == 1 && vakje3 == 1) {
         console.log("speler 1 heeft gewonnen");
+        winnaar = 1;
     }
     if (vakje4 == 1 && vakje5 == 1 && vakje6 == 1) {
         console.log("speler 1 heeft gewonnen");
+        winnaar = 1;
     }
     if (vakje7 == 1 && vakje8 == 1 && vakje9 == 1) {
         console.log("speler 1 heeft gewonnen");
+        winnaar = 1;
     }
     if (vakje1 == 2 && vakje2 == 2 && vakje3 == 2) {
         console.log("speler 2 heeft gewonnen");
+        winnaar = 2;
     }
     if (vakje4 == 2 && vakje5 == 2 && vakje6 == 2) {
         console.log("speler 2 heeft gewonnen");
+        winnaar = 2;
     }
     if (vakje7 == 2 && vakje8 == 2 && vakje9 == 2) {
         console.log("speler 2 heeft gewonnen");
+        winnaar = 2;
     }
 
     // horizontaal
     if (vakje1 == 1 && vakje4 == 1 && vakje7 == 1) {
         console.log("speler 1 heeft gewonnen");
+        winnaar = 1;
     }
     if (vakje2 == 1 && vakje5 == 1 && vakje8 == 1) {
         console.log("speler 1 heeft gewonnen");
+        winnaar = 1;
     }
     if (vakje3 == 1 && vakje6 == 1 && vakje9 == 1) {
         console.log("speler 1 heeft gewonnen");
+        winnaar = 1;
     }
     if (vakje1 == 2 && vakje4 == 2 && vakje7 == 2) {
         console.log("speler 2 heeft gewonnen");
+        winnaar = 2;
     }
     if (vakje2 == 2 && vakje5 == 2 && vakje8 == 2) {
         console.log("speler 2 heeft gewonnen");
+        winnaar = 2;
     }
     if (vakje3 == 2 && vakje6 == 2 && vakje9 == 2) {
         console.log("speler 2 heeft gewonnen");
+        winnaar = 2;
     }
 
     // diagonaal
     if (vakje1 == 1 && vakje5 == 1 && vakje9 == 1) {
         console.log("speler 1 heeft gewonnen");
+        winnaar = 1;
     }
     if (vakje3 == 1 && vakje5 == 1 && vakje7 == 1) {
         console.log("speler 1 heeft gewonnen");
+        winnaar = 1;
     }
     if (vakje1 == 2 && vakje5 == 2 && vakje9 == 2) {
         console.log("speler 2 heeft gewonnen");
+        winnaar = 2;
     }
     if (vakje3 == 2 && vakje5 == 2 && vakje7 == 2) {
         console.log("speler 2 heeft gewonnen");
+        winnaar = 2;
     }
 
-
+ 
 }
