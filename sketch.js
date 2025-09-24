@@ -218,4 +218,27 @@ function mousePressed() {
             speler = 1;
         }
     }
+    checkWin();
+}
+
+function checkWin() {
+    if (vakje1 == 1 && vakje2 == 1 && vakje3 == 1) {
+        console.log("speler 1 heeft gewonnen");
+    }
+    if (vakje4 == 1 && vakje5 == 1 && vakje6 == 1) {
+        console.log("speler 1 heeft gewonnen");
+    }
+    if (vakje7 == 1 && vakje8 == 1 && vakje9 == 1) {
+        console.log("speler 1 heeft gewonnen");
+    }
+    if (vakje1 == 2 && vakje2 == 2 && vakje3 == 2) {
+        console.log("speler 2 heeft gewonnen");
+    }
+    if (vakje4 == 2 && vakje5 == 2 && vakje6 == 2) {
+        console.log("speler 2 heeft gewonnen");
+    }
+    if (vakje7 == 2 && vakje8 == 2 && vakje9 == 2) {
+        console.log("speler 2 heeft gewonnen");
+    }
+
 }
